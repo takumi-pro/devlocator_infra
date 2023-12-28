@@ -1,0 +1,2 @@
+# devlocator_infra
+DevLocatorのインフラリポジトリ
