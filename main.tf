@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
   credentials = file(var.credentials_file)
-  project = "sigma-method-409207"
+  project = var.project
   region  = var.region
 }
 

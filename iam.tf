@@ -24,3 +24,6 @@
 #   role               = "roles/iam.workloadIdentityUser"
 #   member             = "principal://iam.googleapis.com/${google_iam_workload_identity_pool.github_actions.name}/subject/repo:takumi-pro/devlocator_backend"
 # }
+
+# ↓memberは以下が正しい
+#  member              ="principalSet://iam.googleapis.com/projects/<project_number>/locations/global/workloadIdentityPools/github-actions-oidc/attribute.repository/takumi-pro/devlocator_backend"
