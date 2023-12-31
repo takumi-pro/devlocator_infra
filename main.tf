@@ -17,7 +17,14 @@ resource "google_artifact_registry_repository" "devlocator_app_repository" {
   location      = var.region
   repository_id = var.repository_id_app
   format        = "DOCKER"
-  description   = "Docker repository"
+  description   = "devlocator backend container repositry"
+}
+
+resource "google_artifact_registry_repository" "devlocator_batch_repository" {
+  location      = var.region
+  repository_id = var.repository_id_batch
+  format        = "DOCKER"
+  description   = "devlocator batch container repositry"
 }
 
 // TODO: batch artifact registry
